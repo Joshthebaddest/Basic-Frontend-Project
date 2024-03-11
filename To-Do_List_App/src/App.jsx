@@ -25,7 +25,7 @@ function App() {
     <>
       {!size ? 
       (
-        <div>
+        <div className='min-h-screen min-w-screen'>
           <Nav />
           <Routes>
             <Route path='/' element={<Home />}></Route>

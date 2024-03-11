@@ -16,16 +16,16 @@ function Nav() {
 
   return (
     <>
-        <div className='flex justify-between px-10 pt-5'>
+        <div className='flex justify-between px-5 pt-5'>
             <div>
-                <button className="font-bold text-2xl" id="menu" onClick={handleToDo}>
+                <button className="font-bold text-3xl" id="menu">
                 <CgMenuLeft />
                 </button>
                 <Tooltip className='text-md' anchorSelect='#menu' place='bottom'>Menu</Tooltip>
             </div>
 
             <div className='font-bold'>
-                <h1>Tasks</h1>
+                <h1 className='text-2xl'>Tasks</h1>
             </div>
 
             <div>
