@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FiUser } from 'react-icons/fi';
 import { FaBriefcase } from 'react-icons/fa';
-import { useStateContext } from '../context/context';
+import { useStateContext } from '../../context/todo/context';
 
 function Hero() { 
   const { scrollVal, TaskData } = useStateContext()

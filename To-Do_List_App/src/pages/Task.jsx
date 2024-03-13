@@ -1,5 +1,5 @@
 import React from 'react'
-import { AddTask } from '../component'
+import { AddTask } from '../component/todo'
 
 function Task() {
   return (

@@ -1,8 +1,8 @@
 import React from 'react'
 import Forms from './Forms'
-import { useStateContext } from '../context/context'
+import { useStateContext } from '../../context/todo/context'
 import { v4 as id } from 'uuid';
-import { TaskColor } from '../reducers/authReducers';
+import { TaskColor } from '../../reducers/todo/authReducers';
 
 function ToDo() {
     const { formState, taskState, taskDispatch } = useStateContext()
