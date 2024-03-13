@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css'
-import { Nav } from './component';
-import { Home, Task } from './pages'
+import { Calculator, Home, StopwatchTimer } from './pages'
 import { Routes, Route } from "react-router-dom";
 
 
@@ -26,10 +25,10 @@ function App() {
       {!size ? 
       (
         <div className='min-h-screen min-w-screen'>
-          <Nav />
           <Routes>
             <Route path='/' element={<Home />}></Route>
-            <Route path='/task' element={<Task />}></Route>
+            <Route path='/calculator' element={<Calculator />}></Route>
+            <Route path='/timer' element={<StopwatchTimer />}></Route>
           </Routes>
         </div>
 

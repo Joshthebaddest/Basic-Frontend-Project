@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react'
-import { form_state, formReducer } from '../reducers/authReducers'
-import { useStateContext } from '../context/context'
+import { form_state, formReducer } from '../../reducers/todo/authReducers'
+import { useStateContext } from '../../context/todo/context'
 
 function Forms({ name, placeholder, text, margin }) {
     const { formState, formDispatch } = useStateContext()

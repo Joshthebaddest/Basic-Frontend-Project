@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { Button, Hero, Task, AddTask, ToDo } from '../component';
-import { useStateContext } from '../context/context';
-import CreateTask from '../component/CreateTask';
+import { Button, Hero, Task, AddTask, ToDo } from '../../component/todo';
+import { useStateContext } from '../../context/todo/context';
+import CreateTask from '../../component/todo/CreateTask';
+import { Nav } from '../../component/todo';
 
 function Home() {
   const { taskList, setTaskList, addTask, taskState, taskDispatch } = useStateContext()
@@ -32,6 +33,7 @@ function Home() {
 
   return (
     <>
+        <Nav />
         <Hero />
         <Task />
         {!taskList? <Button /> : <AddTask />}

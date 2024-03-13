@@ -1,8 +1,7 @@
 import React from 'react'
 import { GoPlus } from "react-icons/go";
 import { CgMenuLeft } from "react-icons/cg";
-import ToDo from './ToDo';
-import { useStateContext } from '../context/context';
+import { useStateContext } from '../../context/todo/context';
 import { Tooltip } from 'react-tooltip';
 
 function Nav() {
